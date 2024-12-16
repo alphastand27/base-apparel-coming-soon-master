@@ -1,0 +1,104 @@
+body {
+  font-size: 16px;
+  background-image: linear-gradient(135deg, white, #fff5f5);
+  height: 100vh; }
+
+#container {
+  max-width: 375px;
+  margin: 8% auto 10% auto; }
+  #container #background-pattern, #container #desktop-img {
+    display: none; }
+  #container #logo {
+    width: 28%;
+    margin-left: 8%; }
+  #container #hero-mobile {
+    width: 100%;
+    margin-top: 7%; }
+  #container #header {
+    text-align: center;
+    font-weight: 600;
+    font-size: 250%;
+    margin: 15% auto auto auto;
+    letter-spacing: 15px;
+    line-height: 45px; }
+  #container #header span {
+    color: #ce9797; }
+  #container #greeting {
+    color: #ce9797;
+    text-align: center;
+    margin: 6% 5% 13%;
+    font-size: 14px; }
+  #container #email {
+    margin-left: 5%;
+    height: 45px;
+    width: 280px;
+    border-radius: 25px;
+    border: 1px solid #ce9797;
+    color: #ce9797;
+    background-color: rgba(255, 255, 255, 0);
+    padding-left: 5%; }
+  #container #submit {
+    position: absolute;
+    margin-left: -12%;
+    background-image: -webkit-linear-gradient(2deg, #f8bfbf, #ee8c8c);
+    border: none;
+    width: 20%;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: -7px 14px 25px rgba(128, 128, 128, 0.315); }
+
+@media only screen and (min-width: 1320px) {
+  body {
+    background-image: linear-gradient(135deg, white, #fff5f5);
+    height: 128vh; }
+
+  #container {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 1440px;
+    margin: -1% auto 0 auto; }
+    #container #background-pattern, #container #desktop-img {
+      display: block; }
+    #container #background-pattern {
+      position: absolute;
+      z-index: 0;
+      width: 55%;
+      height: 128%; }
+    #container #desktop-img {
+      position: relative; }
+    #container #hero-desktop {
+      width: 99vh; }
+    #container #text-content {
+      position: relative;
+      z-index: 1; }
+    #container #logo {
+      width: 20%;
+      margin: 11% auto auto 23%; }
+    #container #hero-mobile {
+      display: none; }
+    #container #header {
+      text-align: start;
+      font-size: 350%;
+      margin: 15% 25% auto 23%;
+      letter-spacing: 18px;
+      line-height: 60px; }
+    #container #header span {
+      color: #ce9797; }
+    #container #greeting {
+      text-align: start;
+      margin: 3% 20% 13% 23%;
+      line-height: 25px; }
+    #container #email {
+      margin-left: 23%;
+      height: 45px;
+      width: 355px;
+      border-radius: 25px; }
+    #container #submit {
+      margin-left: -12%;
+      border: none;
+      width: 12%;
+      height: 50px;
+      border-radius: 25px;
+      box-shadow: -7px 14px 25px rgba(128, 128, 128, 0.315); } }
+
+/*# sourceMappingURL=style.css.map */
