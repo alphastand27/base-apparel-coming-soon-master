@@ -1,0 +1,154 @@
+// Mobile first styling
+
+$Desaturated-Red: hsl(0, 36%, 70%);
+$Soft-Red: hsl(0, 93%, 68%);
+$Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+body {
+    font-size: 16px;
+    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    height: 100vh;
+}
+
+#container {
+    max-width: 375px;
+    margin: 8% auto 10% auto;
+
+    #background-pattern, #desktop-img {
+        display: none
+    }
+
+    #logo {
+        width: 28%;
+        margin-left: 8%
+    }
+
+    #hero-mobile {
+        width: 100%;
+        margin-top: 7%;
+    }
+
+    #header {
+        text-align: center;
+        font-weight: 600;
+        font-size: 250%;
+        margin: 15% auto auto auto;
+        letter-spacing: 15px;
+        line-height: 45px
+    }
+
+    #header span {
+        color: $Desaturated-Red;
+    }
+
+    #greeting {
+        color: $Desaturated-Red;
+        text-align: center;
+        margin: 6% 5% 13%;
+        font-size: 14px;
+    }
+
+    #email {
+        margin-left: 5%;
+        height: 45px;
+        width: 280px;
+        border-radius: 25px;
+        border: 1px solid $Desaturated-Red;
+        color: $Desaturated-Red;
+        background-color: rgba(255, 255, 255, 0);
+        padding-left: 5%;
+    }
+
+    #submit {
+        position: absolute;
+        margin-left: -12%;
+        background-image: -webkit-linear-gradient(2deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        border: none;
+        width: 20%;
+        height: 50px;
+        border-radius: 25px;
+        box-shadow: -7px 14px 25px rgba(128, 128, 128, 0.315);
+    }
+}
+
+@media only screen and (min-width: 1320px) {
+
+    body {
+        background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+        height: 128vh;
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: auto auto;
+        max-width: 1440px;
+        margin: -1% auto 0 auto;
+    
+        #background-pattern, #desktop-img {
+            display: block
+        }
+
+        #background-pattern {
+            position: absolute;
+            z-index: 0;
+            width: 55%;
+            height: 128%;
+        }
+
+        #desktop-img {
+            position: relative;
+        }
+
+        #hero-desktop {
+            width: 99vh;
+        }
+
+        #text-content {
+            position: relative;
+            z-index: 1;
+        }
+    
+        #logo {
+            width: 20%;
+            margin: 11% auto auto 23%; 
+        }
+    
+        #hero-mobile {
+            display: none
+        }
+    
+        #header {
+            text-align: start;
+            font-size: 350%;
+            margin: 15% 25% auto 23%;
+            letter-spacing: 18px;
+            line-height: 60px;
+        }
+    
+        #header span {
+            color: $Desaturated-Red;
+        }
+    
+        #greeting {
+            text-align: start;
+            margin: 3% 20% 13% 23%;
+            line-height: 25px;
+        }
+    
+        #email {
+            margin-left: 23%;
+            height: 45px;
+            width: 355px;
+            border-radius: 25px;
+        }
+    
+        #submit {
+            margin-left: -12%;
+            border: none;
+            width: 12%;
+            height: 50px;
+            border-radius: 25px;
+            box-shadow: -7px 14px 25px rgba(128, 128, 128, 0.315);
+        }
+    }
+}
